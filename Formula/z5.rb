@@ -5,7 +5,7 @@
 class Z5 < Formula
   desc ""
   homepage ""
-  version "0.0.3"
+  version "0.0.1"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,8 +13,8 @@ class Z5 < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/sZma5a/z5/releases/download/v0.0.3/z5_Darwin_x86_64.tar.gz"
-      sha256 "12346c7889ecb075ab6d8a111da43798729b2ef361ad8f3363a5fddace78451f"
+      url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Darwin_x86_64.tar.gz"
+      sha256 "513bfda8ebb9a15f927adddc90301209a3532d532d3c15acb3b954093a0d8f05"
 
       def install
         bin.install "z5"
@@ -25,8 +25,8 @@ class Z5 < Formula
       end
     end
     on_arm do
-      url "https://github.com/sZma5a/z5/releases/download/v0.0.3/z5_Darwin_arm64.tar.gz"
-      sha256 "8fe237243c0fba63e030c24f0f1400f4f6e43b69946ecf172fbd3dc543e27a08"
+      url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Darwin_arm64.tar.gz"
+      sha256 "77fea49fb9991ead5a5e2af9222e856ef1960c2b65ce0b10300424090fe38424"
 
       def install
         bin.install "z5"
@@ -41,8 +41,8 @@ class Z5 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/z5/releases/download/v0.0.3/z5_Linux_x86_64.tar.gz"
-        sha256 "afbae6c03996ff579f7216cb9d7aab60ac47657c05de6c447149f6eed5f80ce0"
+        url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Linux_x86_64.tar.gz"
+        sha256 "08774d1850f8ceee6a2310ebdf43f7051d7024b0f03008c19b1098886ac10862"
 
         def install
           bin.install "z5"
@@ -55,8 +55,8 @@ class Z5 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/z5/releases/download/v0.0.3/z5_Linux_arm64.tar.gz"
-        sha256 "16de1295426a2790fad0720f4ff90ad09e37ecd82661e8f5e10e513ea2c35cc7"
+        url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Linux_arm64.tar.gz"
+        sha256 "bcfad6f1966d32ace741ce3bb4dcbe6012d50d585077c303fce9f5896c605525"
 
         def install
           bin.install "z5"
