@@ -14,7 +14,7 @@ class Z5 < Formula
   on_macos do
     on_intel do
       url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Darwin_x86_64.tar.gz"
-      sha256 "513bfda8ebb9a15f927adddc90301209a3532d532d3c15acb3b954093a0d8f05"
+      sha256 "6ab6d137caf6f0b0655294b1c0ccc763ec8068e0757cddbd41a751a42de84264"
 
       def install
         bin.install "z5"
@@ -26,7 +26,7 @@ class Z5 < Formula
     end
     on_arm do
       url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Darwin_arm64.tar.gz"
-      sha256 "77fea49fb9991ead5a5e2af9222e856ef1960c2b65ce0b10300424090fe38424"
+      sha256 "13534453e1d5f6cd861f6a2c6ae15d847fce0c2f460a14ca7ef58c0b37c2fcf1"
 
       def install
         bin.install "z5"
@@ -42,7 +42,7 @@ class Z5 < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Linux_x86_64.tar.gz"
-        sha256 "08774d1850f8ceee6a2310ebdf43f7051d7024b0f03008c19b1098886ac10862"
+        sha256 "a2b53c81574b91941a1d61b2b976ba14755c12f2c1e83982a49e00bbe78776a5"
 
         def install
           bin.install "z5"
@@ -56,7 +56,7 @@ class Z5 < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Linux_arm64.tar.gz"
-        sha256 "bcfad6f1966d32ace741ce3bb4dcbe6012d50d585077c303fce9f5896c605525"
+        sha256 "f25b7a5cf89471ffe611c417229b77df64bc58ffdfb9516c42387b1e24439285"
 
         def install
           bin.install "z5"
@@ -68,6 +68,4 @@ class Z5 < Formula
       end
     end
   end
-
-  conflicts_with "goreleaser-pro"
 end
