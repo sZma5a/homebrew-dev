@@ -5,7 +5,7 @@
 class Z5 < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,27 +13,19 @@ class Z5 < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Darwin_x86_64.tar.gz"
-      sha256 "6ab6d137caf6f0b0655294b1c0ccc763ec8068e0757cddbd41a751a42de84264"
+      url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Darwin_x86_64.tar.gz"
+      sha256 "763517d4e1be2aee81eb1bb4774beb796506728c4799aae46426fde87d2a0a0e"
 
       def install
         bin.install "z5"
-        bash_completion.install "completions/goreleaser.bash" => "goreleaser"
-        zsh_completion.install "completions/goreleaser.zsh" => "_goreleaser"
-        fish_completion.install "completions/goreleaser.fish"
-        man1.install "manpages/goreleaser.1.gz"
       end
     end
     on_arm do
-      url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Darwin_arm64.tar.gz"
-      sha256 "13534453e1d5f6cd861f6a2c6ae15d847fce0c2f460a14ca7ef58c0b37c2fcf1"
+      url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Darwin_arm64.tar.gz"
+      sha256 "bd329b80bf5f6ab9844bd82b3164c9481e76e478c439228a8a13d7549b349fef"
 
       def install
         bin.install "z5"
-        bash_completion.install "completions/goreleaser.bash" => "goreleaser"
-        zsh_completion.install "completions/goreleaser.zsh" => "_goreleaser"
-        fish_completion.install "completions/goreleaser.fish"
-        man1.install "manpages/goreleaser.1.gz"
       end
     end
   end
@@ -41,29 +33,21 @@ class Z5 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Linux_x86_64.tar.gz"
-        sha256 "a2b53c81574b91941a1d61b2b976ba14755c12f2c1e83982a49e00bbe78776a5"
+        url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Linux_x86_64.tar.gz"
+        sha256 "97821885da0e764d29c7d91414b63438a0d03d9c50649cb3f651c1f12e4efbce"
 
         def install
           bin.install "z5"
-          bash_completion.install "completions/goreleaser.bash" => "goreleaser"
-          zsh_completion.install "completions/goreleaser.zsh" => "_goreleaser"
-          fish_completion.install "completions/goreleaser.fish"
-          man1.install "manpages/goreleaser.1.gz"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/z5/releases/download/v0.0.1/z5_Linux_arm64.tar.gz"
-        sha256 "f25b7a5cf89471ffe611c417229b77df64bc58ffdfb9516c42387b1e24439285"
+        url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Linux_arm64.tar.gz"
+        sha256 "e35e1326fa0dddaf301b50d3b8d2e9094b429101d88737256d64de8f3c48b46a"
 
         def install
           bin.install "z5"
-          bash_completion.install "completions/goreleaser.bash" => "goreleaser"
-          zsh_completion.install "completions/goreleaser.zsh" => "_goreleaser"
-          fish_completion.install "completions/goreleaser.fish"
-          man1.install "manpages/goreleaser.1.gz"
         end
       end
     end
