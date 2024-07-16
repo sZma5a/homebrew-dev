@@ -5,7 +5,7 @@
 class Z5 < Formula
   desc ""
   homepage ""
-  version "0.0.7"
+  version "0.0.9"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Z5 < Formula
 
   on_macos do
     on_intel do
-      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Darwin_x86_64.tar.gz"
-      sha256 "9a8fa0c95cc21f80e9497239695b4eb38537111e9b67e02d8e90761420d42725"
+      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Darwin_x86_64.tar.gz"
+      sha256 "d35c6a5582ae025a51fcd5ae0508e99ba6bc355e9a9c5fcab7d72439fa1f5c12"
 
       def install
         bin.install "z5"
       end
     end
     on_arm do
-      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Darwin_arm64.tar.gz"
-      sha256 "f643a18ebe7083f41ba2abf948dd433095032b87831af0b1d745509a2da163ac"
+      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Darwin_arm64.tar.gz"
+      sha256 "fc572b27d7633e567b98b65af4bb4845a6681a7a000f153d5d2a5ffbf62a6289"
 
       def install
         bin.install "z5"
@@ -33,8 +33,8 @@ class Z5 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Linux_x86_64.tar.gz"
-        sha256 "32daa24f15c79c8dffb45b1e7de957158574c66619332dc962c5b0d59463bdaa"
+        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Linux_x86_64.tar.gz"
+        sha256 "7ed7240a9c954201a58c3d649c6f6a3763e2b9c18091b7365826fc8f5fb1375a"
 
         def install
           bin.install "z5"
@@ -43,8 +43,8 @@ class Z5 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Linux_arm64.tar.gz"
-        sha256 "1d068a2ef952f6f370866a043cd22ff7707656651b3942704d70a60f03eca5cb"
+        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Linux_arm64.tar.gz"
+        sha256 "0b6f8a3f1b868a8830bc659c19d3d0e4f33800c9d45b705213383e76fa34a81f"
 
         def install
           bin.install "z5"
