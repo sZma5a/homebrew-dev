@@ -5,7 +5,7 @@
 class Z5 < Formula
   desc ""
   homepage ""
-  version "0.0.9"
+  version "0.0.10"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Z5 < Formula
 
   on_macos do
     on_intel do
-      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Darwin_x86_64.tar.gz"
-      sha256 "d35c6a5582ae025a51fcd5ae0508e99ba6bc355e9a9c5fcab7d72439fa1f5c12"
+      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.10/z5_Darwin_x86_64.tar.gz"
+      sha256 "b7e27594d45d1b723a2b5dd22e4b038bf0796f0f1fe8f4f2149f0ddca9dfa64a"
 
       def install
         bin.install "z5"
       end
     end
     on_arm do
-      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Darwin_arm64.tar.gz"
-      sha256 "fc572b27d7633e567b98b65af4bb4845a6681a7a000f153d5d2a5ffbf62a6289"
+      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.10/z5_Darwin_arm64.tar.gz"
+      sha256 "2b9169bd881d5a10975fa3a8bbf510719838753d64ac66f6a78209604be6542d"
 
       def install
         bin.install "z5"
@@ -33,8 +33,8 @@ class Z5 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Linux_x86_64.tar.gz"
-        sha256 "7ed7240a9c954201a58c3d649c6f6a3763e2b9c18091b7365826fc8f5fb1375a"
+        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.10/z5_Linux_x86_64.tar.gz"
+        sha256 "24afc48a2a9146ccb355a954e981f3b108d3a8c52b9ac6ff9a29a3580a7363a3"
 
         def install
           bin.install "z5"
@@ -43,8 +43,8 @@ class Z5 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.9/z5_Linux_arm64.tar.gz"
-        sha256 "0b6f8a3f1b868a8830bc659c19d3d0e4f33800c9d45b705213383e76fa34a81f"
+        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.10/z5_Linux_arm64.tar.gz"
+        sha256 "1795e672d650dcdfbbc0744f5d89b92ccc883491fcd6b0908cdf21a397228b43"
 
         def install
           bin.install "z5"
