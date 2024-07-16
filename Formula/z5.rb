@@ -5,7 +5,7 @@
 class Z5 < Formula
   desc ""
   homepage ""
-  version "0.0.2"
+  version "0.0.7"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Z5 < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Darwin_x86_64.tar.gz"
-      sha256 "eefd7a1e281a3a86be5a16c7729db9478c8c09748239130d5c212ee120768b9d"
+      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Darwin_x86_64.tar.gz"
+      sha256 "9a8fa0c95cc21f80e9497239695b4eb38537111e9b67e02d8e90761420d42725"
 
       def install
         bin.install "z5"
       end
     end
     on_arm do
-      url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Darwin_arm64.tar.gz"
-      sha256 "b3d26a2e17df23ba8a9f51cd39fa07c2978aa3ff6ae48b881c64b37066935af9"
+      url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Darwin_arm64.tar.gz"
+      sha256 "f643a18ebe7083f41ba2abf948dd433095032b87831af0b1d745509a2da163ac"
 
       def install
         bin.install "z5"
@@ -33,8 +33,8 @@ class Z5 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Linux_x86_64.tar.gz"
-        sha256 "909a6c1527afdcbcb25c32ea4ff6b3bb1d49de1107cec2a21ed411fd52531303"
+        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Linux_x86_64.tar.gz"
+        sha256 "32daa24f15c79c8dffb45b1e7de957158574c66619332dc962c5b0d59463bdaa"
 
         def install
           bin.install "z5"
@@ -43,8 +43,8 @@ class Z5 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/z5/releases/download/v0.0.2/z5_Linux_arm64.tar.gz"
-        sha256 "5945259365cfe2fc1b8d1f067b8b0ed2f68d18304f9b533eb22fb589fd314fad"
+        url "https://raw.githubusercontent.com/sZma5a/z5/main/v0.0.7/z5_Linux_arm64.tar.gz"
+        sha256 "1d068a2ef952f6f370866a043cd22ff7707656651b3942704d70a60f03eca5cb"
 
         def install
           bin.install "z5"
