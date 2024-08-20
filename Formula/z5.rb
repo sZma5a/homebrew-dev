@@ -5,7 +5,7 @@
 class Z5 < Formula
   desc ""
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
   license "Apache-2.0"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Z5 < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.5/z5_Darwin_x86_64.tar.gz"
-      sha256 "6cd2c0fb286757451a7f1e126b4cf899b4e358fd7279b9b7660f9d0209b65b96"
+      url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Darwin_x86_64.tar.gz"
+      sha256 "03007037fbb8a7852a859e981ab05088e75a042b714787f23a60380caad2de7a"
 
       def install
         bin.install "z5"
       end
     end
     on_arm do
-      url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.5/z5_Darwin_arm64.tar.gz"
-      sha256 "68de8a75ddde77f075f7f615e43f099e67132ff0caafc2556ad894a6e3f19c10"
+      url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Darwin_arm64.tar.gz"
+      sha256 "18c5297d7234ce2aaf5456cbceb17e407d7122823ddbabb13776b27b8d449c7c"
 
       def install
         bin.install "z5"
@@ -33,8 +33,8 @@ class Z5 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.5/z5_Linux_x86_64.tar.gz"
-        sha256 "bfa996f2916fe8a571352e069e59e0208248c92f6aa13d3b3b5fc09f1c0bed8b"
+        url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Linux_x86_64.tar.gz"
+        sha256 "74e693cdee9bbef297fa651fec43f3cac2d3c906f9334ee0fb470c3d395e0179"
 
         def install
           bin.install "z5"
@@ -43,8 +43,8 @@ class Z5 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.5/z5_Linux_arm64.tar.gz"
-        sha256 "c767e214bd8c9e1f4bdd2821b95fac6daa9312eb182ab38162a7563f79b6e322"
+        url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Linux_arm64.tar.gz"
+        sha256 "7a36ba33ddd16614ca2b9c98ae108e938a13656e4f33e4595cbb5b28485a3bdb"
 
         def install
           bin.install "z5"
