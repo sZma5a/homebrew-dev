@@ -14,7 +14,7 @@ class Z5 < Formula
   on_macos do
     on_intel do
       url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Darwin_x86_64.tar.gz"
-      sha256 "21d8683ee07e74b704b87228b2bda76fedbbf814c5c8ad0781970ca2122a0bfb"
+      sha256 "7f57c01ab88a2a5b2be2eaabd7649b5d6db323beb935d2268bb3e9fb2072bcac"
 
       def install
         bin.install "z5"
@@ -22,7 +22,7 @@ class Z5 < Formula
     end
     on_arm do
       url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Darwin_arm64.tar.gz"
-      sha256 "65044673b512c22ad3bf5927280bcf516ef7375d7485d650c013b95032177ee4"
+      sha256 "949f6394a2dc751b8c09ccefa3c00e24e323aa412ca9042de58fe76c9ebe49d0"
 
       def install
         bin.install "z5"
@@ -34,7 +34,7 @@ class Z5 < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Linux_x86_64.tar.gz"
-        sha256 "e70c41c1eb10b14c4574451786ac65b1ce0b68d32e331960530ab16220423d97"
+        sha256 "d8096fb0fc1b64a88c22ed746c1c6e1f938aedff35ca9fc9636644a2eb9f9ae9"
 
         def install
           bin.install "z5"
@@ -44,7 +44,7 @@ class Z5 < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/sZma5a/homebrew-tap/releases/download/v0.0.6/z5_Linux_arm64.tar.gz"
-        sha256 "339856a36269df626943d5ae8e894dc76978ef96378d65106ee4556d38b01ae0"
+        sha256 "271f3910618d46f2f10fb5f34144d930e96f0d85927af02838f39c9f09f7bc0e"
 
         def install
           bin.install "z5"
